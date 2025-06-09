@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI for All: Community Heroes Overview</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* 导航栏透明+滚动变色 */
+.navbar {
+    background-color: rgba(13, 110, 253, 0.85); /* 初始微透明蓝 */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar.scrolled {
+    background-color: #0d6efd !important; /* 滚动后纯色 */
+}
+
+/* 导航文字 hover 效果 */
+.nav-link {
+    position: relative;
+    color: #fff !important;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #e0f7ff !important;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+        /* 标题 hover 效果 */
+h1:hover, h3:hover, h4:hover {
+    transform: translateY(-2px);
+    text-shadow: 1px 1px 10px rgba(0, 191, 255, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+/* 每个 box 的交互样式 */
+.highlight-box:hover {
+    background-color: rgba(13, 202, 240, 0.25);
+    box-shadow: 0 4px 20px rgba(0, 123, 255, 0.25);
+    transform: translateY(-4px);
+    transition: all 0.3s ease;
+}
+
+/* section 普通段落 hover */
+p:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 0.8rem;
+    border-left: 4px solid #0d6efd;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+/* 主按钮 hover */
+a.btn-primary:hover {
+    background-color: #0070c0;
+    transform: scale(1.05);
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+        body {
+            margin: 0;
+            background: url('/static/overview_bg.png') no-repeat center center fixed;
+            background-size: cover;
+            font-family: "Segoe UI", "PingFang SC", "Helvetica Neue", sans-serif;
+            color: #212529;
+        }
+
+        .overlay {
+            background-color: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border-radius: 20px;
+            padding: 50px;
+            max-width: 960px;
+            margin: 100px auto;
+            box-shadow: 0 0 24px rgba(0,0,0,0.25);
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: #00bfff;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            color: #444;
+            text-align: center;
+        }
+
+        h4 {
+            font-size: 1.2rem;
+            color: #00a87f;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .section-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .highlight-box {
+            background-color: rgba(13, 202, 240, 0.15);
+            border-left: 5px solid #0dcaf0;
+            padding: 1rem;
+            margin-top: 0.5rem;
+            border-radius: 8px;
+        }
+
+        .icon {
+            margin-right: 0.5rem;
+        }
+
+        .nav-link {
+            color: #fff !important;
+            font-weight: 500;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            color: #fff !important;
+        }
+
+        a.btn-primary {
+            font-weight: bold;
+            padding: 0.75rem 2rem;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Top Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="/">AI for All</a>
+        <div class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav">
+                <a class="nav-link" href="/about">About This Site</a>
+                <a class="nav-link" href="/contact">Contact Us</a>
+                <a class="nav-link" href="/version">Version 1.0</a>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Main Content -->
+<div class="container">
+    <div class="overlay mt-5">
+        <h1>AI for All: Community Heroes Education Workshop</h1>
+        <h3>From Your Block to Breakthrough – AI That Cares</h3>
+        <h4>Empowering Neighborhoods with Applied AI Learning</h4>
+
+        <div class="mb-4">
+            <div class="section-title"><span class="icon">🌐</span>Project Background: The Urgency and Opportunity of AI Education</div>
+            <div class="highlight-box">
+                As AI technology rapidly evolves, a large gap persists between technical advancement and real-world adoption. Recent studies show that 85% of the general population finds AI "distant and inaccessible", and only 12% can effectively use AI tools in everyday life. This gap limits AI’s societal potential and risks reinforcing digital inequality.
+            </div>
+        </div>
+
+        <div class="mb-4">
+            <div class="section-title"><span class="icon">📊</span>Industry Context & Challenges</div>
+            <p>
+                AI tools today are heavily concentrated in academic and commercial sectors, with few accessible mechanisms for education or nonprofit use. A shortage of cross-disciplinary talents—those who understand both technology and community needs—prevents many neighborhoods from building their own AI solutions.
+            </p>
+        </div>
+
+        <div class="mb-4">
+            <div class="section-title"><span class="icon">🎯</span>Social Value and Opportunity</div>
+            <p>
+                AI holds transformative potential for public health, education, community services, and beyond. Yet without proper education pipelines, this potential remains unrealized. Through hands-on learning, we aim to make AI serve the public good and fulfill the vision of "AI Empower Good with Good".
+            </p>
+        </div>
+
+        <div class="text-center mt-4">
+            <a href="/main" class="btn btn-primary btn-lg">🚀 I Want to Participate</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
